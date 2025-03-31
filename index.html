@@ -3,48 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Love Story 💖</title>
+    <title>Our Anniversary</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Plyr CDN -->
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <!-- Add Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+    <!-- Add Plyr JS -->
     <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 </head>
 <body>
-    <!-- Music Player -->
-    <div id="music-player">
-        <audio id="audioPlayer" controls></audio>
-        <span id="currentSongTitle"></span>
-    </div>
-
-    <div id="heart-container"></div>  <!-- Floating hearts effect -->
-
     <div class="container">
-        <h1>Our 1.5 Years Together 💕</h1>
-        <p>Let's take a trip down memory lane...</p>
-        
-        <div class="slideshow-container">
-            <img id="slideshow" src="images/photo_1.jpeg" alt="Memories">
-            <div id="question-slide" class="hidden">
-                <h2 id="question"></h2>
-                <button id="yesBtn">Yes ❤️</button>
-                <button id="noBtn">No 🙈</button>
-            </div>
-            <div id="gif-container" class="hidden">
-                <img id="response-gif" src="" alt="Response GIF">
-            </div>
-            <div class="button-container">
-                <button id="prevBtn">⏪ Prev</button>
-                <button id="nextBtn">Next ⏩</button>
-            </div>
+        <img id="slideshow" src="" alt="Slideshow Image">
+        <div id="question-slide" class="hidden">
+            <p id="question"></p>
+            <button id="yesBtn">Yes</button>
+            <button id="noBtn">No</button>
         </div>
-
-        <div id="finalMessage" class="hidden">
-            <h2>Will you be my side for the rest of our lives? 🥺💕</h2>
-            <p>After 1.5 years, I’d choose you all over again.</p>
-            <button id="finalYesBtn">YES! 💖</button>
+        <div id="gif-container" class="hidden">
+            <img id="response-gif" src="" alt="Response GIF">
         </div>
+        <div class="controls">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+        <div id="finalMessage" class        <p>You’ve reached the end! Will you say yes forever?</p>
+        <button id="finalYesBtn">Yes!</button>
     </div>
-
-    <script src="./scripts/script.js"></script>
+    <div id="heart-container"></div>
+    <audio id="audioPlayer" controls></audio>
+    <p>Now Playing: <span id="currentSongTitle"></span></p>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
