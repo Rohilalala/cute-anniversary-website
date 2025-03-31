@@ -5,9 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Love Story 💖</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Plyr CDN -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
 </head>
 <body>
-    <div id="heart-container"></div>
+    <!-- Music Player -->
+    <div id="music-player">
+        <audio id="audioPlayer" controls></audio>
+        <span id="currentSongTitle"></span>
+    </div>
+
+    <div id="heart-container"></div>  <!-- Floating hearts effect -->
 
     <div class="container">
         <h1>Our 1.5 Years Together 💕</h1>
@@ -15,26 +24,27 @@
         
         <div class="slideshow-container">
             <img id="slideshow" src="images/photo_1.jpeg" alt="Memories">
-        </div>
-
-        <div class="button-container">
-            <button id="prevBtn">⏪ Prev</button>
-            <button id="nextBtn">Next ⏩</button>
-        </div>
-
-        <div id="questions-container" class="hidden">
-            <h2 id="question"></h2>
-            <button id="yesBtn">Yes ❤️</button>
-            <button id="noBtn">No 🙈</button>
+            <div id="question-slide" class="hidden">
+                <h2 id="question"></h2>
+                <button id="yesBtn">Yes ❤️</button>
+                <button id="noBtn">No 🙈</button>
+            </div>
+            <div id="gif-container" class="hidden">
+                <img id="response-gif" src="" alt="Response GIF">
+            </div>
+            <div class="button-container">
+                <button id="prevBtn">⏪ Prev</button>
+                <button id="nextBtn">Next ⏩</button>
+            </div>
         </div>
 
         <div id="finalMessage" class="hidden">
-            <h2>Will you be my girlfriend again? 🥺💕</h2>
+            <h2>Will you be my side for the rest of our lives? 🥺💕</h2>
             <p>After 1.5 years, I’d choose you all over again.</p>
             <button id="finalYesBtn">YES! 💖</button>
         </div>
     </div>
 
-    <script src="scripts/script.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 </html>
