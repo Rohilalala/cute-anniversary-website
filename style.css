@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('./fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    background-color: #ffe6f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff4081;
+}
+
+.slideshow-container img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #ff4081;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #e60073;
+}
+
+.hidden {
+    display: none;
+}
+
+#yesBtn {
+    background-color: #4caf50;
+}
+
+#yesBtn:hover {
+    background-color: #388e3c;
+}
+
+#noBtn {
+    background-color: #f44336;
+}
+
+#noBtn:hover {
+    background-color: #d32f2f;
+}
